@@ -1,6 +1,6 @@
 from flask import Flask
 from flask import render_template
-
+import json
 
 app = Flask(__name__)
 
@@ -36,4 +36,4 @@ def alias():
 
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(debug=True)

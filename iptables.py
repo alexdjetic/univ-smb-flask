@@ -1,14 +1,8 @@
 from flask import Flask
 from flask import render_template
-<<<<<<< HEAD
-import json
-=======
 from dataparser import DataParser
 
->>>>>>> 7486b4d (maj)
-
 app = Flask(__name__)
-
 
 @app.route("/")
 def hello():
@@ -45,10 +39,5 @@ def alias():
     print(data)
     return render_template("alias.html", alias=data)
 
-
 if __name__ == "__main__":
-<<<<<<< HEAD
     app.run(debug=True)
-=======
-    app.run(debug=True)
->>>>>>> 7486b4d (maj)

@@ -22,7 +22,7 @@ class DataParser:
         except Exception as e:
             print(e)
 
-    def extract_key(self, key: str) -> list | None:
+    def extract_key(self, key: str) -> list:
         if self._data[0].get(key, None) is not None:
             return [self._data[i].get(key, None) for i in range(len(self._data))]
         else:

@@ -1,8 +1,9 @@
-<!DOCTYPE html>
-    {% extends "layout.html" %}
-    <body>
-        {% block content %}
-
-        {% endblock %}
-    </body>
-</html>
+{% extends "layout.html" %}
+{% block content %}
+<h2>liste règle NAT:</h2>
+<ul>
+    {% for ip, port in nat_rules %}
+    <li>{{ ip }} : {{ port }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

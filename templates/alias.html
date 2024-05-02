@@ -1,8 +1,10 @@
-<!DOCTYPE html>
-    {% extends "layout.html" %}
-    <body>
-        {% block content %}
+{% extends "layout.html" %}
 
-        {% endblock %}
-    </body>
-</html>
+{% block content %}
+<h2>liste d'alias:</h2>
+<ul>
+    {% for aliases in alias %}
+    <li>{{ aliases }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
